@@ -31,11 +31,13 @@
       "size" : "40x40"
     },
     {
+      "filename" : "logo with background 120.png",
       "idiom" : "iphone",
       "scale" : "2x",
       "size" : "60x60"
     },
     {
+      "filename" : "logo with background 180.png",
       "idiom" : "iphone",
       "scale" : "3x",
       "size" : "60x60"
@@ -71,16 +73,24 @@
       "size" : "40x40"
     },
     {
+      "filename" : "ios7 ipad.png",
       "idiom" : "ipad",
-      "scale" : "2x",
+      "scale" : "1x",
       "size" : "76x76"
     },
     {
       "idiom" : "ipad",
       "scale" : "2x",
+      "size" : "76x76"
+    },
+    {
+      "filename" : "app store-1.png",
+      "idiom" : "ipad",
+      "scale" : "2x",
       "size" : "83.5x83.5"
     },
     {
+      "filename" : "app store.png",
       "idiom" : "ios-marketing",
       "scale" : "1x",
       "size" : "1024x1024"

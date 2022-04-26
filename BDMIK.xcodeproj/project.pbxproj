@@ -7,8 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DB09BEC128134EDE007F408B /* app.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB09BEC028134EDE007F408B /* app.storyboard */; };
+		DB1E0A222815FECB00C1076A /* settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB1E0A212815FECB00C1076A /* settings.storyboard */; };
+		DB1E0A262816155D00C1076A /* loginStory.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB1E0A252816155D00C1076A /* loginStory.storyboard */; };
+		DB1E0A282816686700C1076A /* SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB1E0A272816686600C1076A /* SwiftUIView.swift */; };
+		DBD1E633280FCDF800E3C624 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBD1E632280FCDF800E3C624 /* Launch Screen.storyboard */; };
 		DBE886A627FD126100E64912 /* BDMIKApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBE886A527FD126100E64912 /* BDMIKApp.swift */; };
-		DBE886A827FD126100E64912 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBE886A727FD126100E64912 /* ContentView.swift */; };
 		DBE886AA27FD126800E64912 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DBE886A927FD126800E64912 /* Assets.xcassets */; };
 		DBE886AD27FD126800E64912 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DBE886AC27FD126800E64912 /* Preview Assets.xcassets */; };
 		DBE886B727FD126900E64912 /* BDMIKTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBE886B627FD126900E64912 /* BDMIKTests.swift */; };
@@ -34,9 +38,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DB09BEC028134EDE007F408B /* app.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = app.storyboard; sourceTree = "<group>"; };
+		DB1E0A212815FECB00C1076A /* settings.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = settings.storyboard; sourceTree = "<group>"; };
+		DB1E0A252816155D00C1076A /* loginStory.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = loginStory.storyboard; sourceTree = "<group>"; };
+		DB1E0A272816686600C1076A /* SwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIView.swift; sourceTree = "<group>"; };
+		DBD1E632280FCDF800E3C624 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		DBE886A227FD126100E64912 /* BDMIK.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BDMIK.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DBE886A527FD126100E64912 /* BDMIKApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BDMIKApp.swift; sourceTree = "<group>"; };
-		DBE886A727FD126100E64912 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		DBE886A927FD126800E64912 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DBE886AC27FD126800E64912 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		DBE886B227FD126900E64912 /* BDMIKTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BDMIKTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -71,10 +79,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		DBE8869927FD126100E64912 = {
+		DBD1E631280FCAE000E3C624 /* BDMIK story */ = {
 			isa = PBXGroup;
 			children = (
 				DBE886A427FD126100E64912 /* BDMIK */,
+				DBD1E632280FCDF800E3C624 /* Launch Screen.storyboard */,
+				DB09BEC028134EDE007F408B /* app.storyboard */,
+				DB1E0A212815FECB00C1076A /* settings.storyboard */,
+				DB1E0A252816155D00C1076A /* loginStory.storyboard */,
+			);
+			path = "BDMIK story";
+			sourceTree = "<group>";
+		};
+		DBE8869927FD126100E64912 = {
+			isa = PBXGroup;
+			children = (
+				DBE886A927FD126800E64912 /* Assets.xcassets */,
+				DBD1E631280FCAE000E3C624 /* BDMIK story */,
 				DBE886B527FD126900E64912 /* BDMIKTests */,
 				DBE886BF27FD126900E64912 /* BDMIKUITests */,
 				DBE886A327FD126100E64912 /* Products */,
@@ -95,8 +116,7 @@
 			isa = PBXGroup;
 			children = (
 				DBE886A527FD126100E64912 /* BDMIKApp.swift */,
-				DBE886A727FD126100E64912 /* ContentView.swift */,
-				DBE886A927FD126800E64912 /* Assets.xcassets */,
+				DB1E0A272816686600C1076A /* SwiftUIView.swift */,
 				DBE886AB27FD126800E64912 /* Preview Content */,
 			);
 			path = BDMIK;
@@ -231,8 +251,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DB1E0A262816155D00C1076A /* loginStory.storyboard in Resources */,
+				DBD1E633280FCDF800E3C624 /* Launch Screen.storyboard in Resources */,
 				DBE886AD27FD126800E64912 /* Preview Assets.xcassets in Resources */,
+				DB09BEC128134EDE007F408B /* app.storyboard in Resources */,
 				DBE886AA27FD126800E64912 /* Assets.xcassets in Resources */,
+				DB1E0A222815FECB00C1076A /* settings.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -257,7 +281,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DBE886A827FD126100E64912 /* ContentView.swift in Sources */,
+				DB1E0A282816686700C1076A /* SwiftUIView.swift in Sources */,
 				DBE886A627FD126100E64912 /* BDMIKApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -299,6 +323,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "";
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
@@ -345,6 +370,8 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = NO;
+				INFOPLIST_KEY_UILaunchStoryboardName = "";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -359,6 +386,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "";
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
@@ -399,6 +427,8 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = NO;
+				INFOPLIST_KEY_UILaunchStoryboardName = "";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -416,12 +446,15 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"BDMIK/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen";
+				INFOPLIST_KEY_UIMainStoryboardFile = loginStory;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -433,7 +466,10 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
+				launchscreen = "";
+				"launchscreen[arch=*]" = "";
+				s = "";
 			};
 			name = Debug;
 		};
@@ -444,12 +480,15 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"BDMIK/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen";
+				INFOPLIST_KEY_UIMainStoryboardFile = loginStory;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -461,7 +500,9 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
+				launchscreen = "";
+				s = "";
 			};
 			name = Release;
 		};
