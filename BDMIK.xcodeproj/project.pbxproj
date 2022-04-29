@@ -11,6 +11,11 @@
 		DB1E0A222815FECB00C1076A /* settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB1E0A212815FECB00C1076A /* settings.storyboard */; };
 		DB1E0A262816155D00C1076A /* loginStory.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB1E0A252816155D00C1076A /* loginStory.storyboard */; };
 		DB1E0A282816686700C1076A /* SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB1E0A272816686600C1076A /* SwiftUIView.swift */; };
+		DBA0715A28189A450097CD01 /* profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBA0715928189A450097CD01 /* profile.storyboard */; };
+		DBA0715C2819DEF80097CD01 /* health center.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBA0715B2819DEF80097CD01 /* health center.storyboard */; };
+		DBA0715E2819EB2F0097CD01 /* health centerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA0715D2819EB2F0097CD01 /* health centerTableViewCell.swift */; };
+		DBA071602819EEE20097CD01 /* centerListscreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA0715F2819EEE20097CD01 /* centerListscreen.swift */; };
+		DBA071622819F2970097CD01 /* healthcenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA071612819F2970097CD01 /* healthcenter.swift */; };
 		DBD1E633280FCDF800E3C624 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBD1E632280FCDF800E3C624 /* Launch Screen.storyboard */; };
 		DBE886A627FD126100E64912 /* BDMIKApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBE886A527FD126100E64912 /* BDMIKApp.swift */; };
 		DBE886AA27FD126800E64912 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DBE886A927FD126800E64912 /* Assets.xcassets */; };
@@ -42,6 +47,11 @@
 		DB1E0A212815FECB00C1076A /* settings.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = settings.storyboard; sourceTree = "<group>"; };
 		DB1E0A252816155D00C1076A /* loginStory.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = loginStory.storyboard; sourceTree = "<group>"; };
 		DB1E0A272816686600C1076A /* SwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIView.swift; sourceTree = "<group>"; };
+		DBA0715928189A450097CD01 /* profile.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = profile.storyboard; sourceTree = "<group>"; };
+		DBA0715B2819DEF80097CD01 /* health center.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "health center.storyboard"; sourceTree = "<group>"; };
+		DBA0715D2819EB2F0097CD01 /* health centerTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "health centerTableViewCell.swift"; sourceTree = "<group>"; };
+		DBA0715F2819EEE20097CD01 /* centerListscreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = centerListscreen.swift; sourceTree = "<group>"; };
+		DBA071612819F2970097CD01 /* healthcenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = healthcenter.swift; sourceTree = "<group>"; };
 		DBD1E632280FCDF800E3C624 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		DBE886A227FD126100E64912 /* BDMIK.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BDMIK.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DBE886A527FD126100E64912 /* BDMIKApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BDMIKApp.swift; sourceTree = "<group>"; };
@@ -82,11 +92,18 @@
 		DBD1E631280FCAE000E3C624 /* BDMIK story */ = {
 			isa = PBXGroup;
 			children = (
+				DBA071612819F2970097CD01 /* healthcenter.swift */,
+				DBA0715D2819EB2F0097CD01 /* health centerTableViewCell.swift */,
+				DB1E0A272816686600C1076A /* SwiftUIView.swift */,
+				DBE886A527FD126100E64912 /* BDMIKApp.swift */,
+				DBA0715F2819EEE20097CD01 /* centerListscreen.swift */,
 				DBE886A427FD126100E64912 /* BDMIK */,
 				DBD1E632280FCDF800E3C624 /* Launch Screen.storyboard */,
 				DB09BEC028134EDE007F408B /* app.storyboard */,
 				DB1E0A212815FECB00C1076A /* settings.storyboard */,
+				DBA0715928189A450097CD01 /* profile.storyboard */,
 				DB1E0A252816155D00C1076A /* loginStory.storyboard */,
+				DBA0715B2819DEF80097CD01 /* health center.storyboard */,
 			);
 			path = "BDMIK story";
 			sourceTree = "<group>";
@@ -115,8 +132,6 @@
 		DBE886A427FD126100E64912 /* BDMIK */ = {
 			isa = PBXGroup;
 			children = (
-				DBE886A527FD126100E64912 /* BDMIKApp.swift */,
-				DB1E0A272816686600C1076A /* SwiftUIView.swift */,
 				DBE886AB27FD126800E64912 /* Preview Content */,
 			);
 			path = BDMIK;
@@ -251,11 +266,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DBA0715A28189A450097CD01 /* profile.storyboard in Resources */,
 				DB1E0A262816155D00C1076A /* loginStory.storyboard in Resources */,
 				DBD1E633280FCDF800E3C624 /* Launch Screen.storyboard in Resources */,
 				DBE886AD27FD126800E64912 /* Preview Assets.xcassets in Resources */,
 				DB09BEC128134EDE007F408B /* app.storyboard in Resources */,
 				DBE886AA27FD126800E64912 /* Assets.xcassets in Resources */,
+				DBA0715C2819DEF80097CD01 /* health center.storyboard in Resources */,
 				DB1E0A222815FECB00C1076A /* settings.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -283,6 +300,9 @@
 			files = (
 				DB1E0A282816686700C1076A /* SwiftUIView.swift in Sources */,
 				DBE886A627FD126100E64912 /* BDMIKApp.swift in Sources */,
+				DBA071622819F2970097CD01 /* healthcenter.swift in Sources */,
+				DBA071602819EEE20097CD01 /* centerListscreen.swift in Sources */,
+				DBA0715E2819EB2F0097CD01 /* health centerTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

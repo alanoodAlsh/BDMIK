@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="iBt-Ku-qgd">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--health center table-->
+        <scene sceneID="Esf-Kc-6jR">
+            <objects>
+                <viewController title="health center table" id="WIf-xf-B8b" customClass="centerListscreen" customModule="BDMIK" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="1sr-aF-NM2">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="o5d-We-yAS">
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Centercell" rowHeight="90" id="QpC-Kh-Cci" customClass="health_centerTableViewCell" customModule="BDMIK" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="44.5" width="414" height="90"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="QpC-Kh-Cci" id="daJ-78-uS7">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="90"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="U88-K2-bwV">
+                                                    <rect key="frame" x="12" y="8" width="132" height="74"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="132" id="ArJ-bD-zks"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mSH-DB-Ndb">
+                                                    <rect key="frame" x="156" y="14.5" width="226" height="21"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="226" id="AgR-vU-NEH"/>
+                                                        <constraint firstAttribute="height" constant="21" id="fTR-1P-7PL"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="21"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kx7-83-txf">
+                                                    <rect key="frame" x="156" y="39" width="226" height="21"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="21" id="VJc-ba-Ok6"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="13"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VAL-xm-rlc">
+                                                    <rect key="frame" x="156" y="61" width="226" height="21"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="21" id="S1d-Xg-0Ly"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="13"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="U88-K2-bwV" firstAttribute="bottom" secondItem="VAL-xm-rlc" secondAttribute="bottom" id="5Bk-dl-eZ7"/>
+                                                <constraint firstItem="Kx7-83-txf" firstAttribute="trailing" secondItem="VAL-xm-rlc" secondAttribute="trailing" id="6Re-8y-sMX"/>
+                                                <constraint firstItem="VAL-xm-rlc" firstAttribute="top" secondItem="Kx7-83-txf" secondAttribute="bottom" constant="1" id="F1B-vH-zQh"/>
+                                                <constraint firstItem="Kx7-83-txf" firstAttribute="leading" secondItem="VAL-xm-rlc" secondAttribute="leading" id="P1S-Oh-zET"/>
+                                                <constraint firstItem="Kx7-83-txf" firstAttribute="top" secondItem="mSH-DB-Ndb" secondAttribute="bottom" constant="3.5" id="S2a-AF-OsH"/>
+                                                <constraint firstItem="mSH-DB-Ndb" firstAttribute="leading" secondItem="U88-K2-bwV" secondAttribute="trailing" constant="12" id="ScW-qH-xwJ"/>
+                                                <constraint firstItem="U88-K2-bwV" firstAttribute="top" secondItem="daJ-78-uS7" secondAttribute="topMargin" constant="-3" id="Z0w-ag-J3Q"/>
+                                                <constraint firstItem="U88-K2-bwV" firstAttribute="leading" secondItem="daJ-78-uS7" secondAttribute="leadingMargin" constant="-8" id="bpr-xA-X6c"/>
+                                                <constraint firstItem="mSH-DB-Ndb" firstAttribute="trailing" secondItem="Kx7-83-txf" secondAttribute="trailing" id="oZQ-bH-Ozb"/>
+                                                <constraint firstItem="mSH-DB-Ndb" firstAttribute="leading" secondItem="Kx7-83-txf" secondAttribute="leading" id="pPo-A5-YiJ"/>
+                                                <constraint firstItem="mSH-DB-Ndb" firstAttribute="top" secondItem="daJ-78-uS7" secondAttribute="topMargin" constant="3.5" id="qdh-ay-42F"/>
+                                                <constraint firstItem="U88-K2-bwV" firstAttribute="centerY" secondItem="daJ-78-uS7" secondAttribute="centerY" id="tbS-IT-SDP"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="centerbloodtype" destination="Kx7-83-txf" id="kq3-dn-adT"/>
+                                            <outlet property="centerlocation" destination="VAL-xm-rlc" id="d4P-uw-Amm"/>
+                                            <outlet property="healthcenterimg" destination="U88-K2-bwV" id="i4S-tg-snx"/>
+                                            <outlet property="healthcentername" destination="mSH-DB-Ndb" id="ZIh-LU-pb2"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="x3h-C7-SXg"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="o5d-We-yAS" firstAttribute="leading" secondItem="x3h-C7-SXg" secondAttribute="leading" id="CZc-ni-lMA"/>
+                            <constraint firstItem="o5d-We-yAS" firstAttribute="centerX" secondItem="1sr-aF-NM2" secondAttribute="centerX" id="HdW-Bh-YWL"/>
+                            <constraint firstItem="o5d-We-yAS" firstAttribute="bottom" secondItem="x3h-C7-SXg" secondAttribute="bottom" id="ixG-a3-ZZR"/>
+                            <constraint firstItem="o5d-We-yAS" firstAttribute="top" secondItem="x3h-C7-SXg" secondAttribute="top" id="zx3-eX-XoV"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="YiE-dP-9UU"/>
+                    <connections>
+                        <outlet property="tableview" destination="o5d-We-yAS" id="MaT-00-hKF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wX6-SL-Myt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1611.5942028985507" y="181.47321428571428"/>
+        </scene>
+        <!--health center nav-->
+        <scene sceneID="IZO-cj-sa6">
+            <objects>
+                <navigationController title="health center nav" automaticallyAdjustsScrollViewInsets="NO" id="iBt-Ku-qgd" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="" image="health Icon" selectedImage="health Icon" id="kxQ-we-clE"/>
+                    <toolbarItems/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="8rE-NA-HQ0">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="WIf-xf-B8b" kind="relationship" relationship="rootViewController" id="HVy-4k-YDN"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mvS-cy-zQS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="700" y="180.80357142857142"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="health Icon" width="50" height="50"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

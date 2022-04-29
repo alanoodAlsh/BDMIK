@@ -202,7 +202,7 @@
                                         </userDefinedRuntimeAttributes>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3gT-nO-SjB">
-                                        <rect key="frame" x="0.0" y="281.66666666666669" width="388" height="50"/>
+                                        <rect key="frame" x="0.0" y="281.66666666666669" width="388" height="34"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="b2x-9L-cGL"/>
                                         </constraints>
@@ -215,7 +215,7 @@
                                         </userDefinedRuntimeAttributes>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="blood type" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="623-gT-deG">
-                                        <rect key="frame" x="0.0" y="339.66666666666669" width="388" height="34"/>
+                                        <rect key="frame" x="0.0" y="323.66666666666669" width="388" height="50"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="cT8-Hk-6VM"/>
                                         </constraints>
@@ -286,7 +286,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="fv5-IX-LOV">
-                                <rect key="frame" x="20" y="117" width="388" height="221"/>
+                                <rect key="frame" x="20" y="117" width="388" height="237"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vbF-bH-W0p">
                                         <rect key="frame" x="0.0" y="0.0" width="388" height="41.666666666666664"/>
@@ -316,7 +316,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="national ID/email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xFh-NK-Q17">
-                                        <rect key="frame" x="0.0" y="136" width="388" height="34"/>
+                                        <rect key="frame" x="0.0" y="136" width="388" height="50"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="06W-pV-qad"/>
                                         </constraints>
@@ -329,7 +329,7 @@
                                         </userDefinedRuntimeAttributes>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LWQ-HO-X6W">
-                                        <rect key="frame" x="0.0" y="178" width="388" height="43"/>
+                                        <rect key="frame" x="0.0" y="194" width="388" height="43"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled">
                                             <attributedString key="attributedTitle">
